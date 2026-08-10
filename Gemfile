@@ -9,3 +9,7 @@ group :test do
   gem "rake", "~> 13.0"
   gem "activemodel", ">= 7.1"
 end
+
+group :development, :test do
+  gem "rubocop-rails-omakase", require: false
+end
